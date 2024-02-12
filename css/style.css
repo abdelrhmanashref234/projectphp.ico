@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Harmattan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ul-menu{
+    background-color: #333;
+    color: #ffff;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.li-menu{
+    float: right;
+}
+.li-menu .a-menu{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    display: block;
+    padding: 17px;
+}
+.li-menu .a-menu:hover{
+    background-color: #000;
+}
+.ul-menu p{
+    font-size: 40px;
+    display: inline;
+}
+.column{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.provile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.socail{
+    margin-top: 25px;
+    width: 40px;
+    padding: 5px;
+    font-size: 22px;
+    color: #777; 
+}
+.row{
+    padding:  15px 5px;
+    
+}
+.left{
+    text-transform: uppercase;
+    padding-top: 27px;
+    display: inline;
+    font-size: 18px;
+}
+.right{
+    width: 80%;
+    float: right;
+    
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: " ";
+
+}
+li{
+    list-style: none;
+}
+.main-bar{
+    background-color: gray;
+    display: block;
+    height: 25px;
+}
+.main-bar span{
+    background-color: teal;
+    height: 25px;
+    display: block;
+    color: white;
+
+}
+.html{
+    width: 99%;
+    animation: html 2s;
+}
+.css{
+    width: 90%;
+    animation: css 2s;
+}
+.javascript{
+    width: 88%;
+    animation: javascript 2s;
+}
+.jquery{
+    width: 90%;
+    animation: jquery 2s;
+}
+.php{
+    width: 80%;
+    animation: php 2s;
+}
+.mysql{
+    width: 50%;
+    animation: mysql 2s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+        background-color: goldenrod;
+    }
+    100%{
+        width: 99%;
+        background-color: red;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 88%;
+    }
+}
+@keyframes jquery{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.footer{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+@media  screen and (max-width:800px) {
+    .column{
+        width: 100%;
+
+    }
+    .left{
+        text-align: center;
+    }
+    .footer{
+        display: none;
+    }
+}
